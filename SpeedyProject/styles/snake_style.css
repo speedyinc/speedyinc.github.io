@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 1300px;
+}
+
+header {
+	margin-bottom: 80px;
+}
+
+.start, #start-again {
+	display: flex;
+	justify-content: center;
+}
+
+#btn, #btn2 {
+	background: #000;
+	padding: 10px;
+	color: #fff;
+	border-radius: 15px;
+	transition: .3s;
+	font-size: 16px;
+}
+
+#btn:hover, #btn2:hover {
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+	transform: scale(1.1,1.1);
+}
+
+#btn:active, #btn2:active {
+	transform: scale(1,1);
+}
+
+
+/* Snake */
+/* Площадка, где будет происходить всё действие*/
+.field {
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #ccc;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	box-shadow: 0 0 15px 15px rgba(0,0,0,0.5);
+}
+
+/* Ячейка */
+.excel {
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+}
+
+ /* Тело змейки */
+.snakeBody {
+	background: red;
+	background-size: cover;
+	border-radius: 50%;
+}
+
+/* Голова змейки */
+.head {
+	background: green;
+	background-size: cover;
+	border-radius: 10%;
+}
+
+/* Яблочко / мышка */
+.mouse {
+	background-image: url(../img/apple3.png);
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+}

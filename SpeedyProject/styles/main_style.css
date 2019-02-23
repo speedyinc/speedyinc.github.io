@@ -1,0 +1,331 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Tahoma;
+}
+
+hr {
+	margin: 10px 0 10px 0;
+	border: none; /* Убираем границу для браузера Firefox */
+    color: red; /* Цвет линии для остальных браузеров */
+    background-color: black; /* Цвет линии для браузера Firefox и Opera */
+    height: 2px;
+}
+
+body {
+	width: 100%;
+	background: #EBEBEB;
+}
+
+header {
+	padding: 20px;
+	box-shadow: inset 0px -10px 30px -0px rgba(0, 0, 0, 0.5);
+	background: url(../img/circles-light.png);
+	opacity: 1;
+}
+
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 150px;
+}
+
+.header p {
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#logo {
+	display: flex;
+}
+
+#logo img {
+	margin-right: 5px;
+	width: 36px;
+	height: 33px;
+}
+
+.main-info {
+	padding-bottom: 110px;
+}
+
+.main-info h1 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 65px;
+	font-weight: 500;
+	background: black;
+	color: white;
+	padding: 5px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	letter-spacing: 5px;
+}
+
+#list ul {
+	margin-top: 9px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#list a {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	padding: 10px;
+	transition: all .4s;
+}
+
+#list a:hover {
+	background: #000;
+	color: #fff;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+
+#list a:last-child {
+	margin-right: 0px;
+}
+
+/* Бывшая тень */
+/* main {
+	box-shadow: 0 -0.1px 30px 10px rgba(0,0,0,0.5);
+} */
+
+#Jean {
+	background: url(../img/hemlock-grove-hemlok-grouv.jpg) no-repeat center top;
+	padding-bottom: 100px;
+}
+
+.math {
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.math h1 {
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	background: black;
+	padding: 10px;
+	font-weight: 500;
+	border-radius: 15px;
+	letter-spacing: 5px;
+}
+
+.math p {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+/* calc */
+
+#calc {
+	text-align: center;
+}
+
+#calc h3 {
+	
+}
+
+#calc input {
+	margin: 5px;
+	background: white;
+	color: black;
+	border: 1px solid black;
+	transition: all 0.070s;
+}
+
+#calc input:hover {
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+#calc input:active {
+	box-shadow: 0 0 10px 8px rgb(232,232,232);
+}
+
+ #result {
+	width: 300px;
+	height: 50px;
+	padding: 5px;
+	font-size: 18px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.btns {
+	width: 50px;
+	height: 50px;
+	font-size: 18px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+/* calc end */
+
+.trigo {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.trigo p, input {
+	margin-bottom: 5px;
+}
+
+.trigo span {
+	display: block;
+}
+
+.arc {
+	background: black;
+	padding: 50px 20px 50px 20px;
+	color: white;
+	border-radius: 15px;
+	height: 150px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transition: all 0.090s;
+}
+
+.arc:hover {
+	box-shadow: 0 0 15px 15px rgba(0,0,0,0.5);
+}
+
+.arc:first-child {
+	background: white;
+	color: black;
+}
+
+.arc:first-child:hover {
+	box-shadow: 0 0 15px 15px rgb(232,232,232);
+}
+
+.arc input {
+	background: #EAEAEA;
+}
+
+footer {
+	padding: 50px 0 50px 0;
+	background: url(../img/circles-light.png);
+}
+
+@media screen and (max-width: 1100px) {
+	header, main {
+		padding: 50px 50px 100px 50px;
+	}
+
+	.main-info h1 {
+		font-size: 60px;
+	}
+
+	footer {
+		padding: 50px 50px 50px 50px;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.main-info h1 {
+		font-size: 50px;
+	}
+
+	.trigo {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.arc {
+		margin-top: 50px;
+	}
+
+	.trigo span {
+		display: inline-block;
+	}
+
+}
+
+@media screen and (max-width: 780px) {
+	.main-info h1 {
+		font-size: 35px;
+	}
+
+	.math {
+		padding-top: 50px;
+	}
+
+	.math h1 {
+		font-size: 30px;
+	}
+
+	.arc {
+		margin-top: 10px;
+	}
+
+	header, main {
+		padding: 30px 30px 50px 30px;
+	}
+
+	.header {
+		padding-bottom: 80px;
+	}
+
+	.main-info {
+		padding-bottom: 45px;
+	}
+
+	footer {
+		padding: 30px 30px 30px 30px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	#list ul {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 457px) {
+
+	header, main {
+		padding: 10px 10px 20px 10px;
+	}
+
+	.header {
+		padding-bottom: 30px;
+	}
+
+	.main-info {
+		padding: 0;
+	}
+
+	.main-info h1 {
+		margin-bottom: 20px;
+	}
+
+	.math {
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	footer {
+		padding: 20px 20px 20px 20px;
+	}
+}
+
+@media screen and (max-width: 355px) {
+	.header p {
+		margin-top: 10px;
+		margin-left: 30px;
+	}
+
+	#result {
+		width: 95%;
+	}
+}

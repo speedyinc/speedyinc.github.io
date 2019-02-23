@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Speedy Projects - Math</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/main_style.css" type="text/css">
+
+	<style>
+
+		#list a:first-child {
+			background: #000;
+			color: #fff;
+			border-radius: 15px;
+			box-sizing: border-box;
+		}
+
+		#list a:first-child:hover {
+			background: #676767;
+		}
+
+	</style>
+
+</head>
+<body>
+	
+	<header>	
+		<div class="wrapper">
+			
+			<div class="header">
+				<div id="logo">
+					<img src="img/Logo_line.png" alt="logo_img">
+					<h1>Speedy</h1>
+				</div>
+				<p>For special display</p>
+			</div>
+			
+			<div class="main-info">
+				<h1>All my projects are here</h1>
+				<div id="list">
+					<ul>
+						<a href="math.html">Math</a>
+						<a href="gallery.html">Gallery</a>
+						<a href="snake.html">Snake Game</a>
+						<a href="portfolio.html">Portfolio</a>
+					</ul>
+				</div>				
+			</div>
+			
+		</div>
+	</header>
+
+	<main id="Jean">
+		<div class="wrapper">
+			<div class="math">
+				<h1>Math block</h1>
+				<p>You can find different things from math here.</p>
+			</div>
+		<div id="calc">
+
+			<hr>
+
+			<h3>Calculator 2.0</h3>
+			<form name="form">
+				<input id="result" name="result">
+			</form>
+
+			<table>
+				<input  class="btns" type="button" value="<" onclick="back()">
+				<input  class="btns" type="button" value="C" onclick="clean()">
+				<input  class="btns" type="button" value="*" onclick="func('*')">
+				<input  class="btns" type="button" value="/" onclick="func('/')">
+
+				<br>
+
+				<input  class="btns" type="button" value="1" onclick="func(1)">
+				<input  class="btns" type="button" value="2" onclick="func(2)">
+				<input  class="btns" type="button" value="3" onclick="func(3)">
+				<input  class="btns" type="button" value="-" onclick="func('-')">
+
+				<br>
+
+				<input  class="btns" type="button" value="4" onclick="func(4)">
+				<input  class="btns" type="button" value="5" onclick="func(5)">
+				<input  class="btns" type="button" value="6" onclick="func(6)">
+				<input  class="btns" type="button" value="+" onclick="func('+')">
+				
+				<br>
+
+				<input  class="btns" type="button" value="7" onclick="func(7)">
+				<input  class="btns" type="button" value="8" onclick="func(8)">
+				<input  class="btns" type="button" value="9" onclick="func(9)">
+				<input  class="btns" type="button" value="=" onclick="funcRavn()" id="ravno">
+
+				<br>
+				<input  class="btns" type="button" value="√" onclick="sqrt()" id="sqrt">
+				<input  class="btns" type="button" value="0" onclick="func(0)" id="null">
+				<input  class="btns" type="button" value="," onclick="func(',')">
+				<input  class="btns" type="button" value="x2" onclick="stepen()" id="stepen">
+			</table>
+		</div>
+
+		<hr>
+
+		<div class="trigo">
+			
+			<div class="arc">
+				<p>The <b>sin</b> of number</p>
+				<input type="number" id="sin">
+				<span id="result1"></span>
+			</div>
+		
+
+			<div class="arc">
+				<p>The <b>cos</b> of number</p>
+				<input type="number" id="cos">
+				<span id="result2"></span>
+			</div>
+
+			<div class="arc">
+				<p>The <b>tg</b> of number</p>
+				<input type="number" id="tg">
+				<span id="result3"></span>
+			</div>
+
+			<div class="arc">
+				<p>The <b>ctg</b> of number</p>
+				<input type="number" id="ctg">
+				<span id="result4"></span>
+			</div>
+
+		</div>
+
+		</div>
+	</main>
+
+	<footer>
+		<div class="wrapper">
+			<p>© Speedy 2019 - All Right Reserved</p>
+		</div>
+	</footer>
+
+
+	<script src="script/jquery.js"></script>
+	<script src="script/math.js"></script>
+
+</body>
+</html>
